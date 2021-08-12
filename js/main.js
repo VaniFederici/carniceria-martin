@@ -38,7 +38,7 @@ function dibujarProductos(categoria, buscar) {
             <span>Por Kg</span>
             <button class="product-box__button">
               <a class="button-a" target="_blank"
-              href="https://api.whatsapp.com/send?phone=5493815042464&text=Hola!&nbsp;quiero&nbsp;hacer&nbsp;un&nbsp;pedido">Pedí aquí
+              href="https://api.whatsapp.com/send?phone=5493815039017&text=Hola!&nbsp;quiero&nbsp;hacer&nbsp;un&nbsp;pedido">Pedí aquí
               </a>
             </button>
           </div>
@@ -61,7 +61,7 @@ function enviarFormulario() {
   mensaje =
     encodeURI(`Hola! mi nombre es ${nombre}, mi correo electronico es ${mail},
   mi teléfono es: ${tel} y esta es mi consulta: ${msj}`);
-  let url = `https://api.whatsapp.com/send?phone=5493815042464&text=${mensaje}`;
+  let url = `https://api.whatsapp.com/send?phone=5493815039017&text=${mensaje}`;
   window.open(url, "_blank");
 }
 
