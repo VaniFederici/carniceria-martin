@@ -2,7 +2,7 @@ function enviarFormulario() {
   debugger;
   let inputNombre = document.querySelector("#inputNombre");
 
-  let url = `https://api.whatsapp.com/send?phone=5493815042464&text=Hola!&nbsp;${inputNombre.value}tengo&nbsp;una&nbsp;consulta`;
+  let url = `https://api.whatsapp.com/send?phone=5493815039017&text=Hola!&nbsp;${inputNombre.value}tengo&nbsp;una&nbsp;consulta`;
   window.location = url;
 }
 
