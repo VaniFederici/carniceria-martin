@@ -9,8 +9,10 @@
 * {
   font-family: Gill Sans;
 }
-body {
+body,
+html {
   font-family: Gill Sans;
+  background-color: #253154;
 }
 .nav__menu-container {
   align-items: flex-end !important;
@@ -49,6 +51,7 @@ body {
   color: #bdb7b7;
 }
 .main-container {
+  background-color: #ffffff;
   padding: 30px;
   color: #ffffff;
   font-weight: bold;
@@ -59,7 +62,7 @@ body {
   margin-bottom: 20px;
 }
 .main-container__image {
-  background-image: url(../img/index.jpg);
+  background-image: url(../img/carne.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 318px;
@@ -166,7 +169,9 @@ body {
 
 /* quienes somos section */
 .who-container {
+  background-color: #ffffff;
   padding: 40px;
+  margin: 0px;
 }
 .who-container__text {
   display: flex;
@@ -176,7 +181,7 @@ body {
   font-weight: bold;
 }
 .who-container__image {
-  background-image: url(../img/carniceria\ familiar.jpg);
+  background-image: url(../img/carniceria-familiar.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 311px;
@@ -193,8 +198,10 @@ body {
   text-align: center;
   box-shadow: 0px 9px 14px 0px #615e5e;
   margin-bottom: 80px;
+  margin-top: 20px;
 }
 .contact__container {
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   padding: 70px;
@@ -253,44 +260,63 @@ body {
   margin-top: 15px;
 }
 
-/* estilos emiliano */
+.products-container {
+  background-color: #ffffff;
+  padding-bottom: 60px;
+}
 
-.containerProd {
+.products-container__tittle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px 0px;
+}
+
+.products-container__main {
+  margin: 0px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.containerCajas {
-  width: 90%;
-  height: auto;
-  margin-left: 80px;
-  margin-bottom: 80px;
-  justify-content: space-around;
+.product-box {
+  background: white;
 }
 
-.containerCaja {
-  display: initial;
-  width: 20%;
-  text-align: center;
-  height: 240px;
-  margin: auto;
-  margin-top: 70px;
+.product-box__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin: 50px 20px 0px 20px;
   border: 1px solid #ccc;
-  background: white;
   box-shadow: 0px 0px 1px rgb(0 0 0 / 30%), 0px 3px 7px rgb(0 0 0 / 30%),
     0px 1px white inset, 0px -3px 2px rgb(0 0 0 / 30%) inset;
 }
 
-.imgs {
-  height: 125px;
-  width: 130%;
-  padding: 3px;
-  margin-top: 10px;
+.product-box p {
+  margin: auto;
 }
 
-.containerCaja p {
-  margin: auto;
+.product-box__button {
+  background-color: #ff9900;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+
+.button-a:hover {
+  text-decoration: none;
+  color: black;
+}
+.button-a {
+  color: black;
+  text-decoration: none;
+}
+
+.product-img {
+  width: 90%;
+  padding-top: 10px;
 }
 
 .cajaImagen {
@@ -299,40 +325,12 @@ body {
   width: 100%;
 }
 
-.cajaDetalle {
+.product-detail {
   display: flex;
-  justify-content: left;
-  width: 100%;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
 }
-/* .galerias {
-  display: flex;
-  justify-content: left;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-left: 0px;
-} */
 
-#panelProductos {
-  margin-bottom: 60px;
-}
-
-/******  
-responsive pag productos
-***/
-/* @media (max-width: 1250px) {
-  .imgs {
-    height: 125px;
-    width: 130px;
-  }
-}
-
-@media (max-width: 991px) {
-  .
-} */
 @media (min-width: 991px) {
   #formBuscar {
     display: none;
@@ -374,6 +372,7 @@ responsive pag productos
     width: 100%;
     padding: 10px 10px;
   }
+
   .contact__container-form {
     width: 100%;
   }

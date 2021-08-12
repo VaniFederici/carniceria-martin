@@ -1,107 +1,107 @@
 [
   {
     "id": 1,
-    "nombre": "Roast Beef",
-    "tipo": "aves",
-    "img": ["img/bife.jpg"],
+    "nombre": "Nalga",
+    "categoria": "vacuno",
+    "img": "img/producto-01.jpg",
     "precio": 900
   },
   {
     "id": 2,
-    "nombre": "Nalga",
-    "tipo": "vacuno",
-    "img": ["img/bife.jpg"],
+    "nombre": "Bola de lomo",
+    "categoria": "vacuno",
+    "img": "img/producto-02.jpg",
     "precio": 780
   },
   {
     "id": 3,
     "nombre": "Colita de Cuadril",
-    "tipo": "vacuno",
-    "img": ["img/nalga.jpg"],
+    "categoria": "vacuno",
+    "img": "img/producto-03.jpg",
     "precio": 650
   },
   {
     "id": 4,
-    "nombre": "Casa",
-    "tipo": "vacuno",
-    "img": ["img/milanes.jpg"],
+    "nombre": "Lomo",
+    "categoria": "vacuno",
+    "img": "img/producto-04.jpg",
     "precio": 550
   },
   {
     "id": 5,
-    "nombre": "casa",
-    "tipo": "cerdo",
-    "img": ["img/hornoParrilla.png"],
-    "precio": 720
-  },
-  {
-    "id": 7,
-    "nombre": "casa",
-    "tipo": "achura",
-    "img": ["img/hornoParrilla.png"],
+    "nombre": "Pata muslo",
+    "categoria": "aves",
+    "img": "img/producto-05.jpg",
     "precio": 720
   },
   {
     "id": 6,
-    "nombre": "casa",
-    "tipo": "embutidos",
-    "img": ["img/colitaCuadril.jpg"],
+    "nombre": "Pechuga",
+    "categoria": "aves",
+    "img": "img/producto-06.jpg",
+    "precio": 720
+  },
+  {
+    "id": 7,
+    "nombre": "Pollo",
+    "categoria": "aves",
+    "img": "img/producto-07.jpg",
     "precio": 630
   },
   {
     "id": 8,
-    "nombre": "Casa",
-    "tipo": "aves",
-    "img": ["img/milanes.jpg"],
+    "nombre": "Bondiola",
+    "categoria": "cerdo",
+    "img": "img/producto-08.jpg",
     "precio": 550
   },
   {
     "id": 9,
-    "nombre": "Casa",
-    "tipo": "aves",
-    "img": ["img/milanes.jpg"],
+    "nombre": "Costeleta",
+    "categoria": "cerdo",
+    "img": "img/producto-09.jpg",
     "precio": 550
   },
   {
     "id": 10,
-    "nombre": "casa",
-    "tipo": "cerdo",
-    "img": ["img/colitaCuadril.jpg"],
+    "nombre": "Pechito",
+    "categoria": "cerdo",
+    "img": "img/producto-10.jpg",
     "precio": 630
   },
   {
     "id": 11,
-    "nombre": "Casa",
-    "tipo": "cerdo",
-    "img": ["img/milanes.jpg"],
+    "nombre": "Chorizo de cerdo",
+    "categoria": "embutidos",
+    "img": "img/producto-11.jpg",
     "precio": 550
   },
   {
     "id": 12,
-    "nombre": "casa",
-    "tipo": "achura",
-    "img": ["img/hornoParrilla.jpg"],
+    "nombre": "Salchicha parrillera",
+    "categoria": "embutidos",
+    "img": "img/producto-12.jpg",
     "precio": 720
   },
   {
     "id": 13,
-    "nombre": "casa",
-    "tipo": "embutidos",
-    "img": ["img/colitaCuadril.jpg"],
+    "nombre": "Molleja",
+    "categoria": "achuras",
+    "img": "img/producto-13.jpg",
     "precio": 630
   },
   {
     "id": 14,
-    "nombre": "casa",
-    "tipo": "achura",
-    "img": ["img/hornoParrilla.jpg"],
+    "nombre": "Chinchulin",
+    "categoria": "achuras",
+    "img": "img/producto-14.jpg",
     "precio": 720
   },
   {
     "id": 15,
-    "nombre": "casa",
-    "tipo": "ofertas",
-    "img": ["img/colitaCuadril.jpg"],
+    "nombre": "Carne Molida",
+    "categoria": "ofertas",
+    "img": "img/producto-15.jpg",
     "precio": 630
   }
 ]

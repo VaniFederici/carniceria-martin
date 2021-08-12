@@ -12,9 +12,10 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark  backg-nav">
+  <nav class="navbar navbar-expand-lg navbar-dark backg-nav">
     <div class="container-fluid nav__menu-container">
-      <a class="navbar-brand" href="index.html"><img class="nav-menu__logo" src="./img/Logob.png"> </a>
+      <a class="navbar-brand" href="index.html"><img class="nav-menu__logo" src="./img/logo-carniceria.png" />
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,40 +26,53 @@
             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
           <li class="nav-item nav-menu__item">
-            <a class="nav-link" href="quienesSomos.html">¿Quienes somos?</a>
+            <a class="nav-link" href="quienes-somos.html">¿Quienes somos?</a>
           </li>
           <li class="nav-item dropdown nav-menu__item">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Productos
             </a>
             <ul class="dropdown-menu nav-menu__dropdown" aria-labelledby="navbarDropdown">
-              <li><a id="bVacuno" class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=vacuno" >Vacuno</a></li>
-              <!-- <li><button id="bAves">AVES</button></li> -->
-              <li><a  id="bAves" class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=aves" >Aves</a></li>
-              <li><a  id="bCerdo" class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=cerdo" >Cerdo</a></li>
-              <li><a  id="bEmbutidos" class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=embutidos">Embutidos</a></li>
-              <li><a  id="bAchuras" class="dropdown-item nav-menu__dropdown-item"  href="productos.html?categoria=achuras">Achuras</a></li>
-              <li><a  id="bOfertas" class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=ofertas" >Ofertas</a></li>
               <li>
-                <hr class="dropdown-divider">
+                <a class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=todos">Todos</a>
               </li>
-              <li><a class="dropdown-item  nav-menu__dropdown-item" href="productos.html">Tipo de preparación</a></li>
+              <li>
+                <a class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=vacuno">Vacuno</a>
+              </li>
+              <li>
+                <a id="bAves" class="dropdown-item nav-menu__dropdown-item"
+                  href="productos.html?categoria=aves">Aves</a>
+              </li>
+              <li>
+                <a class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=cerdo">Cerdo</a>
+              </li>
+              <li>
+                <a class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=embutidos">Embutidos</a>
+              </li>
+              <li>
+                <a class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=achuras">Achuras</a>
+              </li>
+              <li>
+                <a class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=ofertas">Ofertas</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item nav-menu__item">
             <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
-
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
-          <button class="btn btn-search" type="submit"><i class="bi bi-search search-icon"></i></button>
+          <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search" />
+          <button class="btn btn-search" type="submit">
+            <i class="bi bi-search search-icon"></i>
+          </button>
         </form>
       </div>
     </div>
   </nav>
   <!-- end nav-bar  -->
+
   <!-- Main -->
   <div class="container-fluid main-container">
     <div class="row main-container-row">
@@ -75,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="row open-container ">
+    <div class="row open-container">
       <div class="col-md-6 col-sm-12 open-container__image">
       </div>
       <div class="col-md-6 col-sm-12 open-container__text">
@@ -91,7 +105,12 @@
       </div>
     </div>
   </div>
+<<<<<<< HEAD
   <a class="whatsapp-icon" target="_blank" href="https://api.whatsapp.com/send?phone=5493815039017&text=Hola!&nbsp;tengo&nbsp;una&nbsp;consulta">
+=======
+  <a class="whatsapp-icon" target="_blank"
+    href="https://api.whatsapp.com/send?phone=5493815042464&text=Hola!&nbsp;tengo&nbsp;una&nbsp;consulta">
+>>>>>>> main
     <img src="./img/whatsapp.png">
   </a>
   <!-- footer -->
@@ -102,7 +121,7 @@
         <a><i class="bi bi-instagram social-icon"></i></a>
       </div>
       <div class="col-md-4 col-xs-12 footer-logo">
-        <img class="footer-logo__image" src="./img/Logob.png">
+        <img class="footer-logo__image" src="./img/logo-carniceria.png">
       </div>
       <div class="col-md-4 col-xs-12 footer-data">
         <div class="footer-info">Horarios de atención:<br>Lunes a viernes de 10 a 19 hrs<br>
@@ -112,16 +131,12 @@
 
   </footer>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
-    crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,62 +1,78 @@
-function enviarFormulario() {
-  debugger;
-  let inputNombre = document.querySelector("#inputNombre");
+function cargarProductos() {
+  $.getJSON("data/productos.json", (response) => {
+    listaProductos = response;
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoria = urlParams.get("categoria");
+    const buscar = urlParams.get("buscar");
 
+<<<<<<< HEAD
   let url = `https://api.whatsapp.com/send?phone=5493815039017&text=Hola!&nbsp;${inputNombre.value}tengo&nbsp;una&nbsp;consulta`;
   window.location = url;
+=======
+    dibujarProductos(categoria, buscar);
+  });
+>>>>>>> main
+}
+
+function dibujarProductos(categoria, buscar) {
+  const productsBox = document.getElementById("products-box");
+  productsBox.innerHTML = ``;
+  let noHayProductos = true;
+  listaProductos.map((producto) => {
+    let mostrarProducto = false;
+    if (buscar) {
+      mostrarProducto =
+        producto.nombre.toLowerCase().indexOf(buscar.toLowerCase()) !== -1;
+    } else if (
+      producto.categoria == categoria ||
+      categoria === "todos" ||
+      !categoria
+    ) {
+      mostrarProducto = true;
+    }
+
+    if (mostrarProducto) {
+      noHayProductos = false;
+      productsBox.innerHTML += `
+      <div class= "product-box col-sm-12 col-md-4">
+        <div class="product-box__container">
+          <img class="product-img" src=${producto.img}>
+          <div class="product-detail"> 
+            <p> ${producto.nombre}</p>    
+            <h5>$${producto.precio}</h5> 
+            <span>Por Kg</span>
+            <button class="product-box__button">
+              <a class="button-a" target="_blank"
+              href="https://api.whatsapp.com/send?phone=5493815042464&text=Hola!&nbsp;quiero&nbsp;hacer&nbsp;un&nbsp;pedido">Pedí aquí
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>`;
+    }
+  });
+  if (noHayProductos) {
+    productsBox.innerHTML = `<div class= "product-box col-sm-12 col-md-4">No se han encontrado productos, intente buscando por categorias o realizando una nueva búsqueda</div>`;
+  }
+}
+
+function enviarFormulario() {
+  debugger;
+  let mensaje;
+  let nombre = document.querySelector("#inputNombre").value;
+  let mail = document.querySelector("#inputEmail").value;
+  let tel = document.querySelector("#inputTel").value;
+  let msj = document.querySelector("#inputMsj").value;
+  mensaje =
+    encodeURI(`Hola! mi nombre es ${nombre}, mi correo electronico es ${mail},
+  mi teléfono es: ${tel} y esta es mi consulta: ${msj}`);
+  let url = `https://api.whatsapp.com/send?phone=5493815042464&text=${mensaje}`;
+  window.open(url, "_blank");
 }
 
 $(document).ready(function () {
-  function cargarProductos(categoria) {
-    // debugger;
-    containerCajas.innerText = ``;
-    productosLista.map((elemento) => {
-      if (elemento.tipo == categoria) {
-        containerCajas.innerHTML += ` 
-                <div class= "containerCaja col-10 col-sm-4 col-lg-3 col-xl-2">
-                <div class="col-12 cajaImagen">
-                        <img class="imgs" src=${elemento.img[0]}>
-                </div>
-                <div class="col-12 cajaDetalle"> 
-                    <p> ${elemento.nombre}</p>    
-                    <h5>$${elemento.precio}</h5> 
-                    <span>Por Kg</span>
-                </div>
-                </div> `;
-      }
-    });
+  listaProductos = [];
+  if (window.location.pathname.endsWith("/productos.html")) {
+    cargarProductos();
   }
-
-  function BuscarProductos(producto) {
-    // debugger;
-    containerCajas.innerText = ``;
-    productosLista.map((elemento) => {
-      if (elemento.nombre == producto) {
-        containerCajas.innerHTML += ` 
-                <div class= "containerCaja col-10 col-sm-4 col-lg-3 col-xl-2">
-                <div class="col-12 cajaImagen">
-                        <img class="imgs" src=${elemento.img[0]}>
-                </div>
-                <div class="col-12 cajaDetalle"> 
-                    <p> ${elemento.nombre}</p>    
-                    <h5>$${elemento.precio}</h5> 
-                    <span>Por Kg</span>
-                </div>
-                </div> `;
-      }
-    });
-  }
-  //DECLARO EL ELEMENTO QUE CONTENDRA LOS DATOS
-  productosLista = []; //declaro el array de objetos que contendra las propiedades guardadas
-
-  $(() => {
-    $.getJSON("data/productos.json", (respuesta) => {
-      productosLista = respuesta;
-      const urlParams = new URLSearchParams(window.location.search);
-      const myParam = urlParams.get("categoria");
-      if (myParam) {
-        cargarProductos(myParam);
-      }
-    });
-  });
 });
